@@ -1,0 +1,137 @@
+/* VARIABLES */
+:root {
+    --color-primario: #d97706;
+    --color-oscuro: #2b2118;
+    --color-claro: #fff8f0;
+    --fuente-principal: Arial, sans-serif;
+}
+
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+
+/* CABECERA */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--color-oscuro);
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: var(--color-primario);
+}
+
+
+/* HERO */
+.hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/restaurante.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+/* BOTÓN PRINCIPAL */
+.btn-primary {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* SECCIÓN DE PLATOS */
+.platos {
+    padding: 60px 50px;
+    background-color: var(--color-claro);
+    text-align: center;
+}
+
+.platos h2 {
+    margin-bottom: 40px;
+    color: var(--color-oscuro);
+    font-size: 30px;
+}
+
+
+/* GRID DE PLATOS */
+.grid-platos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+
+/* TARJETAS */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #00000015;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--color-oscuro);
+}
